@@ -64,7 +64,6 @@ export default function Login() {
       <main className="auth-main">
         <div className="auth-card">
           <h1>Log in</h1>
-          <p className="muted">Use the account details printed by <code>python3 seed.py --demo</code>, or register as a patient.</p>
           {sessionExpired && <Alert type="info">Your session has expired. Please log in again.</Alert>}
           <form onSubmit={onSubmit} noValidate className="form-grid">
             <Alert>{formError}</Alert>
